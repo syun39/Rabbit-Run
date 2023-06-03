@@ -16,12 +16,6 @@ public class GameOver : MonoBehaviour
     {
         if (collision.gameObject.tag == _enemyTag)
         {
-            //_gameover++;
-            //Debug.Log(_gameover);
-            //if (_gameover == 1)
-            //{
-                
-            //}
 
             ChangeScene();
         }

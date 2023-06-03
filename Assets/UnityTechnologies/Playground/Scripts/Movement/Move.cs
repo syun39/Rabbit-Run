@@ -65,9 +65,8 @@ public class Move : Physics2DObject
 	}
 
 
-
-	// FixedUpdate is called every frame when the physics are calculated
-	void FixedUpdate ()
+    // FixedUpdate is called every frame when the physics are calculated
+    void FixedUpdate ()
 	{
 		// Apply the force to the Rigidbody2d
 		rigidbody2D.AddForce(movement * speed * 10f);
