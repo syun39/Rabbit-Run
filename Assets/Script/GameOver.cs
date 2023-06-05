@@ -8,7 +8,7 @@ public class GameOver : MonoBehaviour
     [SerializeField]
     string _enemyTag = "Enemy";
 
-    int _gameover = 0;
+   // int _gameover = 0;
     
 
     
@@ -16,11 +16,18 @@ public class GameOver : MonoBehaviour
     {
         if (collision.gameObject.tag == _enemyTag)
         {
-
             ChangeScene();
         }
     }
 
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == _enemyTag)
+        {
+            ChangeScene();
+        }
+    }
     void ChangeScene()
     {
         SceneManager.LoadScene("GameOver");

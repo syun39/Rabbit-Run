@@ -10,6 +10,7 @@ TagManager:
   - Ground
   - Pickup
   - doro
+  - goal
   layers:
   - Default
   - TransparentFX
