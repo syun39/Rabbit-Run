@@ -52,9 +52,9 @@ public class Move : Physics2DObject
 		movement = new Vector2(moveHorizontal, moveVertical);
 
 
-		//rotate the GameObject towards the direction of movement
-		//the axis to look can be decided with the "axis" variable
-		if(orientToDirection)
+        //rotate the GameObject towards the direction of movement
+        //the axis to look can be decided with the "axis" variable
+        if (orientToDirection)
 		{
 			if(movement.sqrMagnitude >= 0.01f)
 			{
@@ -65,8 +65,8 @@ public class Move : Physics2DObject
 	}
 
 
-    // FixedUpdate is called every frame when the physics are calculated
-    void FixedUpdate ()
+	// FixedUpdate is called every frame when the physics are calculated
+	void FixedUpdate()
 	{
 		// Apply the force to the Rigidbody2d
 		rigidbody2D.AddForce(movement * speed * 10f);
