@@ -1050,7 +1050,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3012c9bb27d6eb458c24d2097aaa324, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sceneNameToBeLoaded: Game
+  _sceneNameToBeLoaded: Gamehard
 --- !u!4 &2040053104
 Transform:
   m_ObjectHideFlags: 0

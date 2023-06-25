@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class usahicontroller : MonoBehaviour
+public class usagicontroller : MonoBehaviour
 {
     //‘¬“x
     [SerializeField] float _speed = 5f;
