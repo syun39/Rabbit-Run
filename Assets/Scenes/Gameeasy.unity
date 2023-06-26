@@ -388,7 +388,7 @@ GameObject:
   - component: {fileID: 137024544}
   m_Layer: 0
   m_Name: toumeinakabe (7)
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1642,7 +1642,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.79, y: -8.06, z: -15}
+  m_LocalPosition: {x: -11.79, y: -7.92, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7029,9 +7029,9 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 2.5
   m_AngularDrag: 0
-  m_GravityScale: 0
+  m_GravityScale: 3
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -7097,7 +7097,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 918738870}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.79, y: -8.06, z: 0}
+  m_LocalPosition: {x: -13.79, y: -7.92, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7117,7 +7117,7 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.01, y: -0.07}
+  m_Offset: {x: -0.01, y: -0.18}
   m_Size: {x: 1.27, y: 2.27}
   m_Direction: 0
 --- !u!114 &918738881
@@ -7158,7 +7158,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9d5d869c2febb549b41341a64db83aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
+  _movePower: 30
+  _flipX: 1
 --- !u!114 &918738887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7171,7 +7172,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15d0c2db1affdb64589c3b9bf1ed1a28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _jumppower: 20
+  _moveJumpPower: 20
+  _jumpPower: 20
 --- !u!1 &931018872
 GameObject:
   m_ObjectHideFlags: 0
@@ -7575,7 +7577,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 953843968}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.79, y: -8.06, z: -15}
+  m_LocalPosition: {x: -11.79, y: -7.92, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

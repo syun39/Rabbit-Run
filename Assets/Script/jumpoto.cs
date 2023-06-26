@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class jumpoto : MonoBehaviour
+public class JumpOto : MonoBehaviour
 {
    
     public AudioClip _sound1;
