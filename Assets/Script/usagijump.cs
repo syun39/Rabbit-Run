@@ -8,12 +8,11 @@ public class UsagiJump : MonoBehaviour
     /// ウサギのキャラクターをジャンプするコンポーネント
     /// </summary>
     /// <summary>左右移動する力</summary>
-    [SerializeField] float _moveJumpPower = 5f;
+    [SerializeField] public float _moveJumpPower = 5f;
     /// <summary>ジャンプする力</summary>
-    [SerializeField] float _jumpPower = 15f;
+    [SerializeField] public float _jumpPower = 15f;
   
     Rigidbody2D _rb = default;
-    SpriteRenderer _sprite = default;
     
     /// <summary>水平方向の入力値</summary>
     float _h;
@@ -23,12 +22,10 @@ public class UsagiJump : MonoBehaviour
     bool _Ground = false;
     int _count = 0;
     bool _isJump;
-    int _wjump = 0;
 
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
-        _sprite = GetComponent<SpriteRenderer>();
         // 初期位置を覚えておく
         _initialPosition = this.transform.position;
     }

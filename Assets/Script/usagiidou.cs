@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class UsagiIdou : MonoBehaviour
@@ -6,7 +7,7 @@ public class UsagiIdou : MonoBehaviour
     /// ウサギのキャラクターを移動するコンポーネント
     /// </summary>
     /// <summary>左右移動する力</summary>
-    [SerializeField] float _movePower = 5f;
+    [SerializeField] public float _movePower = 5f;
     /// <summary>入力に応じて左右を反転させるかどうかのフラグ</summary>
     [SerializeField] bool _flipX = false;
     Rigidbody2D _rb = default;
@@ -21,7 +22,6 @@ public class UsagiIdou : MonoBehaviour
 
     int count;
     bool _isJump;
-    int _wjump = 0;
 
     void Start()
     {
@@ -41,6 +41,8 @@ public class UsagiIdou : MonoBehaviour
         {
             FlipX(_h);
         }
+
+
     }
 
     private void FixedUpdate()
