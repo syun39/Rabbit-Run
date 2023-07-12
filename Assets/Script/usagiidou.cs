@@ -11,9 +11,6 @@ public class UsagiIdou : MonoBehaviour
     /// <summary>入力に応じて左右を反転させるかどうかのフラグ</summary>
     [SerializeField] bool _flipX = false;
     Rigidbody2D _rb = default;
-    SpriteRenderer _sprite = default;
-    /// <summary>m_colors に使う添字</summary>
-    int _colorIndex;
     /// <summary>水平方向の入力値</summary>
     float _h;
     float _scaleX;
@@ -26,7 +23,6 @@ public class UsagiIdou : MonoBehaviour
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
-        _sprite = GetComponent<SpriteRenderer>();
         // 初期位置を覚えておく
         _initialPosition = this.transform.position;
     }

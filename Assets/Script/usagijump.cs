@@ -13,21 +13,15 @@ public class UsagiJump : MonoBehaviour
     [SerializeField] public float _jumpPower = 15f;
   
     Rigidbody2D _rb = default;
-    
+
     /// <summary>水平方向の入力値</summary>
-    float _h;
-    float _scaleX;
-    /// <summary>最初に出現した座標</summary>
-    Vector3 _initialPosition;
+    private float _h;
     bool _Ground = false;
     int _count = 0;
-    bool _isJump;
 
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
-        // 初期位置を覚えておく
-        _initialPosition = this.transform.position;
     }
 
     void Update()

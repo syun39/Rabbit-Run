@@ -1642,7 +1642,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.79, y: -8.06, z: -15}
+  m_LocalPosition: {x: -9.79, y: -8.06, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7298,9 +7298,9 @@ GameObject:
   - component: {fileID: 918738877}
   - component: {fileID: 918738881}
   - component: {fileID: 918738885}
-  - component: {fileID: 918738884}
-  - component: {fileID: 918738883}
   - component: {fileID: 918738886}
+  - component: {fileID: 918738888}
+  - component: {fileID: 918738887}
   m_Layer: 0
   m_Name: usagi
   m_TagString: Player
@@ -7409,8 +7409,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.01, y: -0.07}
-  m_Size: {x: 1.27, y: 2.27}
+  m_Offset: {x: 0.07, y: -0.07}
+  m_Size: {x: 0.88, y: 2.27}
   m_Direction: 0
 --- !u!114 &918738881
 MonoBehaviour:
@@ -7425,41 +7425,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemyTag: Enemy
---- !u!114 &918738883
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 918738870}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31f10aa5048a54a24921059835c4aa10, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rigidbody2D: {fileID: 0}
-  key: 32
-  jumpStrength: 19
-  groundTag: Ground
-  checkGround: 1
---- !u!114 &918738884
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 918738870}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d926fec57fb4c411a912d607e2822370, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rigidbody2D: {fileID: 0}
-  typeOfControl: 0
-  speed: 2.2
-  movementType: 1
-  orientToDirection: 1
-  lookAxis: 1
 --- !u!114 &918738885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7486,6 +7451,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _UrarutoTag: Ura
+--- !u!114 &918738887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918738870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15d0c2db1affdb64589c3b9bf1ed1a28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _moveJumpPower: 19
+  _jumpPower: 19
+--- !u!114 &918738888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918738870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9d5d869c2febb549b41341a64db83aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _movePower: 23
+  _flipX: 1
 --- !u!1 &931018872
 GameObject:
   m_ObjectHideFlags: 0
@@ -7733,7 +7726,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 943436387}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 29.78, y: -8.45, z: 0}
+  m_LocalPosition: {x: 28.78, y: -8.48, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7887,7 +7880,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 953843968}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.79, y: -8.06, z: -15}
+  m_LocalPosition: {x: -9.79, y: -8.06, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9839,8 +9832,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1400116568}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.78, y: -8.36, z: 0}
-  m_LocalScale: {x: 1, y: 1.603125, z: 1}
+  m_LocalPosition: {x: 18.32, y: -8.36, z: 0}
+  m_LocalScale: {x: 1, y: 1.2799952, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -10724,7 +10717,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad980451443d70438faac0bc6c235a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TrackedObjectOffset: {x: 0, y: 0, z: 0}
+  m_TrackedObjectOffset: {x: 4, y: 0, z: 0}
   m_LookaheadTime: 0
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0
