@@ -34,6 +34,7 @@ public class UsagiJump : MonoBehaviour
         {
             _rb.AddForce(Vector2.up * _moveJumpPower, ForceMode2D.Impulse);
             _count++;
+            GetComponent<AudioSource>().Play();
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
