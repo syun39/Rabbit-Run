@@ -6674,13 +6674,13 @@ GameObject:
   - component: {fileID: 918738874}
   - component: {fileID: 918738873}
   - component: {fileID: 918738872}
-  - component: {fileID: 918738877}
   - component: {fileID: 918738881}
   - component: {fileID: 918738885}
   - component: {fileID: 918738886}
   - component: {fileID: 918738887}
   - component: {fileID: 918738888}
-  - component: {fileID: 918738889}
+  - component: {fileID: 918738890}
+  - component: {fileID: 918738891}
   m_Layer: 0
   m_Name: usagi
   m_TagString: Player
@@ -6776,22 +6776,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!70 &918738877
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 918738870}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.07, y: -0.07}
-  m_Size: {x: 0.88, y: 2.27}
-  m_Direction: 0
 --- !u!114 &918738881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6942,7 +6926,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!61 &918738889
+--- !u!70 &918738890
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918738870}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.1, y: -0.07}
+  m_Size: {x: 1.02, y: 2.27}
+  m_Direction: 0
+--- !u!61 &918738891
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6955,7 +6955,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.03, y: -0.99}
+  m_Offset: {x: -0.09, y: -1.14}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -6966,7 +6966,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.99, y: 0.62}
+  m_Size: {x: 0.6, y: 0.29}
   m_EdgeRadius: 0
 --- !u!1 &931018872
 GameObject:
