@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MoveKi : MonoBehaviour
 {
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
@@ -12,7 +12,7 @@ public class MoveKi : MonoBehaviour
             other.transform.SetParent(transform);
         }
     }
-    private void OnCollisionExit2D(Collision2D other)
+    private void OnTriggerExit2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
