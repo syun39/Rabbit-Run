@@ -16,7 +16,7 @@ public class UsagiJump : MonoBehaviour
 
     /// <summary>…•½•ûŒü‚Ì“ü—Í’l</summary>
     private float _h;
-    bool _Ground = false;
+    //bool _Ground = false;
     int _count = 0;
 
     void Start()
@@ -41,7 +41,7 @@ public class UsagiJump : MonoBehaviour
     {
         if (collision.gameObject.tag == "Ground")
         {
-            _Ground = true;
+           // _Ground = true;
             _count = 0;
         }
     }

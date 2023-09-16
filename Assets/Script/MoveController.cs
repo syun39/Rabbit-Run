@@ -24,7 +24,7 @@ public class MoveController : MonoBehaviour
 
     void Update()
     {
-        MoveWithTurn();          
+        MoveWithTurn();
     }
 
   
@@ -43,6 +43,12 @@ public class MoveController : MonoBehaviour
             _lineForWall.x *= -1;
             _moveSpeed = _moveSpeed * -1;
             Debug.Log("Hit Wall");
+            GetComponent<SpriteRenderer>().flipX = true;  //“–‚½‚Á‚½‚ç”½“]
+            if (_lineForWall.x == 1)
+            {
+                GetComponent<SpriteRenderer>().flipX = false;
+            }
+
         }
 
         velo = _moveDirection.normalized * _moveSpeed;
