@@ -12,6 +12,7 @@ TagManager:
   - doro
   - goal
   - Ura
+  - playerkannti
   layers:
   - Default
   - TransparentFX
