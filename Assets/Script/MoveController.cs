@@ -42,7 +42,6 @@ public class MoveController : MonoBehaviour
             //_moveDirection.x *= -1;
             _lineForWall.x *= -1;
             _moveSpeed = _moveSpeed * -1;
-            Debug.Log("Hit Wall");
             GetComponent<SpriteRenderer>().flipX = true;  //“–‚½‚Á‚½‚ç”½“]
             if (_lineForWall.x == 1)
             {
