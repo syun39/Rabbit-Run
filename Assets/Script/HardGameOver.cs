@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameOver : MonoBehaviour
+public class HardGameOver : MonoBehaviour
 {
     [SerializeField] string _enemyTag = "Enemy";
 
@@ -29,6 +29,7 @@ public class GameOver : MonoBehaviour
     }
     void ChangeScene()
     {
-        SceneManager.LoadScene("GameOver");
+        SceneManager.LoadScene("HardGameOver");
+
     }
 }

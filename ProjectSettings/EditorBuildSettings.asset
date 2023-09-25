@@ -44,4 +44,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/NannidoSenntaku.unity
     guid: b0bb9eb3ac8e88e4eb8d56bc1fc5fa5f
+  - enabled: 1
+    path: Assets/Scenes/GameMaster.unity
+    guid: 074207881c65b3d4a9a93366629b6098
+  - enabled: 1
+    path: Assets/Scenes/HardGameOver.unity
+    guid: 84d8d2c8c7baf0c45bcb8ea0bf302cf7
+  - enabled: 1
+    path: Assets/Scenes/MasterGameOver.unity
+    guid: 45b7a646f4ffe204abc9e5b91f2adfe1
   m_configObjects: {}
