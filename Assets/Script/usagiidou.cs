@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,6 +11,7 @@ public class UsagiIdou : MonoBehaviour
     [SerializeField] public float _movePower = 5f;
     /// <summary>入力に応じて左右を反転させるかどうかのフラグ</summary>
     [SerializeField] bool _flipX = false;
+    [SerializeField] float _wateTime = 0;
     Rigidbody2D _rb = default;
     /// <summary>水平方向の入力値</summary>
     float _h;
@@ -20,11 +22,14 @@ public class UsagiIdou : MonoBehaviour
     int count;
     bool _isJump;
 
-    void Start()
+    IEnumerator Start()
     {
         _rb = GetComponent<Rigidbody2D>();
         // 初期位置を覚えておく
         _initialPosition = this.transform.position;
+        enabled = false;
+        yield return new WaitForSeconds(_wateTime);
+        enabled = true;
     }
 
     void Update()

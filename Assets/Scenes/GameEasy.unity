@@ -663,7 +663,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 225, y: 172}
+  m_AnchoredPosition: {x: 234, y: 177}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &283150848
@@ -699,7 +699,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\u3000\u3000\u3000\u2190\u3000\u30B4\u30FC\u30EB\n\u2190\u3000\u2192\u3000\u79FB\u52D5\n\u3000\u3000SPACE\u3000\u30B8\u30E3\u30F3\u30D7"
+  m_Text: "\u3000\u3000\u3000\u2190\u3000\u30B4\u30FC\u30EB\n\u2190\u3000\u2192\u3000\u79FB\u52D5\n\u3000\u3000SPACE\u3000\u30B8\u30E3\u30F3\u30D7\nE 
+    \u2190\u3000\u6575"
 --- !u!222 &283150849
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7684,6 +7685,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _movePower: 30
   _flipX: 1
+  _wateTime: 3
 --- !u!114 &918738887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7698,6 +7700,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _moveJumpPower: 20
   _jumpPower: 20
+  _wateTime: 3
 --- !u!82 &918738888
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8987,7 +8990,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -869, y: -287}
+  m_AnchoredPosition: {x: -868, y: -226}
   m_SizeDelta: {x: 135.7903, y: 130.1392}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1150709082
@@ -11092,6 +11095,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1904769079}
   - component: {fileID: 1904769078}
+  - component: {fileID: 1904769080}
   m_Layer: 0
   m_Name: Game BGM
   m_TagString: Untagged
@@ -11110,7 +11114,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 16dd759f9fb2b3543a542e5b3f48019e, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.4
   m_Pitch: 1
   Loop: 1
@@ -11210,6 +11214,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1904769080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904769077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a519ad0c530421541b346de995b3f7e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _waitTime: 2.8
 --- !u!1 &2001715273
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,17 +12,20 @@ public class UsagiJump : MonoBehaviour
     [SerializeField] public float _moveJumpPower = 5f;
     /// <summary>ƒWƒƒƒ“ƒv‚·‚é—Í</summary>
     [SerializeField] public float _jumpPower = 15f;
-  
+    [SerializeField] float _wateTime = 0;
+
     Rigidbody2D _rb = default;
 
     /// <summary>…•½•ûŒü‚Ì“ü—Í’l</summary>
     private float _h;
-    //bool _Ground = false;
     int _count = 0;
 
-    void Start()
+    IEnumerator Start()
     {
         _rb = GetComponent<Rigidbody2D>();
+        enabled = false;
+        yield return new WaitForSeconds(_wateTime);
+        enabled = true;
     }
 
     void Update()
