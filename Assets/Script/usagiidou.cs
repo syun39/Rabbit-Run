@@ -14,7 +14,7 @@ public class UsagiIdou : MonoBehaviour
     [SerializeField] float _wateTime = 0;
     Rigidbody2D _rb = default;
     /// <summary>…•½•ûŒü‚Ì“ü—Í’l</summary>
-    float _h;
+    private float _h;
     float _scaleX;
     /// <summary>Å‰‚ÉoŒ»‚µ‚½À•W</summary>
     Vector3 _initialPosition;
