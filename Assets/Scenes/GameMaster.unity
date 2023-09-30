@@ -12530,8 +12530,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15d0c2db1affdb64589c3b9bf1ed1a28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moveJumpPower: 19
-  _jumpPower: 19
+  _moveJumpPower: 25
+  _jumpPower: 25
   _wateTime: 3
 --- !u!114 &918738888
 MonoBehaviour:
