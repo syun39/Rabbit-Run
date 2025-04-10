@@ -7,10 +7,6 @@ public class GameOver : MonoBehaviour
 {
     [SerializeField] string _enemyTag = "Enemy";
 
-   // int _gameover = 0;
-    
-
-    
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == _enemyTag)
